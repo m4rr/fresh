@@ -6,6 +6,7 @@
 <div class="js-cover blog-title">
   <div class="title">
     <h1><span class="text-bg"><span class="text-bg__inner">
+      <a href="https://m4rr.ru"><?= @$content['blog']['author'] ?></a> &nbsp;/&nbsp;
       <?= _A ('<a href="'. $content['blog']['href']. '"><span id="e2-blog-title">'. $content['blog']['title']. '</span></a>') ?>
       <?php
         if (
