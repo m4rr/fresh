@@ -6,8 +6,8 @@
 <div class="js-cover blog-title">
   <div class="title">
     <h1><span class="text-bg"><span class="text-bg__inner">
-      <?php $host_name = substr($_SERVER['SERVER_NAME'], strpos($_SERVER['SERVER_NAME'], ".")+1); ?>
-      <a href="//<?= $host_name ?>"><?= @$content['blog']['author'] ?></a> &nbsp;/&nbsp;
+      <?php if (!isset($content['blog']['host'])) { $content['blog']['host'] = substr($_SERVER['SERVER_NAME'], strpos($_SERVER['SERVER_NAME'], '.')+1) } ?>
+      <a href="//<?= $content['blog']['host'] ?>"><?= @$content['blog']['author'] ?></a> &nbsp;/&nbsp;
       <?= _A ('<a href="'. $content['blog']['href']. '"><span id="e2-blog-title">'. $content['blog']['title']. '</span></a>') ?>
       <?php
         if (
