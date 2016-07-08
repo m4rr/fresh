@@ -340,10 +340,10 @@ img.upyachka {
   display: inline;
 }
 .e2-text-picture {
-  text-align: center;
+  text-align: left;
 }
 .e2-text-picture p {
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
 }
